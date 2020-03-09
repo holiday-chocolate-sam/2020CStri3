@@ -11,40 +11,80 @@
                 width: 200px;
                 border-radius: 50%;
                 background-color: yellow;
+                position: relative;
+            
             }
             .eye{
-                height: 25px;
-                width: 25px;
+                height: 50px;
+                width: 50px;
                 border-radius: 50%;
-                background-color: white;
+                background-color:  white;
+                position: absolute;
+                top: 50px;
             }
             .pupil{
-                height: 10px;
-                width: 10px;
+                height: 25px;
+                width:  25px;
                 border-radius: 50%;
+                position: absolute;
                 background-color: black;
+                bottom: 10px;
+                right: 10px;
+                /*transform: translateX(-50%);*/
             }
             #leftEye{
-                
+                left: 25px;
             }
             #rightEye{
-                
+                right: 25px;
             }
             #mouth{
                 background: url('emojiMouth.png') no-repeat center center;
                 background-size:contain;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                bottom: 10px;
+                right: 50px;
+                
             }
             #tongue{
-          
+                background: url('emojiTongue.png') no-repeat center center;
+                background-size:contain;
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          bottom: 10px;
+          left: 25px;
+
+            }
+            #lefteyeBrow{
+              background: url('eyeBrow.png') no-repeat center center;
+                background-size:contain;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                top: -30px;
+            }
+
+            #righteyeBrow{
+background: url('eyeBrow.png') no-repeat center center;
+                background-size:contain;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                top: -30px;
             }
         </style>
     </head>
     <body>
         <div id='face'>
             <div id='leftEye' class='eye'>
+                <div id='lefteyeBrow' class='eyeBrow'></div>
                 <div class='pupil'></div>
             </div>
             <div id='rightEye' class='eye'>
+            <div id='righteyeBrow' class='eyeBrow'></div>
                 <div class='pupil'></div>
             </div>
             <div id='mouth'>
